@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos del alumno</title>
+  <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+  <h1>Informacion del alumno</h1>
+  <form action="">
+    <b>CURP:</b>
+    <input type="text" name="curp" maxlength="18" onkeypress="return soloLetrasyNumeros(event)"><br><br>
+    
+    <b>Nombre:</b>
+    <input type="text" name="nombre" onkeypress="return soloLetras(event)"><br><br>
+    
+    <b>Sexo:</b>
+    <input type="radio" value="Masculino">Masculino
+    <input type="radio" value="Femenino">Femenino
+    
+    <h3>Domicilio</h3>
+    
+    <b>Calle:</b>
+    <input type="text" name="calle" onkeypress="return soloLetras(event)"><br><br>
+    
+    <b>No. exterior:</b>
+    <input type="text" name="no_ext" onkeypress="return soloLetrasyNumeros(event)"><br><br>
+    
+    <b>No. interior:</b>
+    <input type="text" name="no_int" onkeypress="return soloLetrasyNumeros(event)"><br><br>
+    
+    <b>Codigo Postal:</b>
+    <input type="text" name="cod_postal" maxlength="5" onkeypress="return soloNumeros(event)"><br><br>
+    
+    <b>Colonia:</b>
+    <input type="text" name="colonia" onkeypress="return soloLetrasyNumeros(event)"><br><br>
+    
+    <b>Municipio:</b>
+    <input type="text" name="municipio" onkeypress="return soloLetras(event)"><br><br>
+    
+    <b>Estado:</b>
+    <input type="text" name="estado" onkeypress="return soloLetras(event)">
+    
+    <h3>Informacion academica</h3>
+    
+    <b>Codigo:</b>
+    <input type="text" name="codigo" maxlength="9" onkeypress="return soloNumeros(event)"><br><br>
+    
+    <b>Carrera:</b>
+    
+    <select name="Carreras">
+       <option selected value="0"> Elige una carrera </option>
+       <optgroup label="División de Ciencias Básicas">
+           <option value="1">Licenciatura en Física</option>
+           <option value="2">Licenciatura en Matemáticas</option>
+           <option value="3">Licenciatura en Química</option>
+           <option value="4">Químico Farmacéutico Biólogo</option>
+           <option value="5">Licenciatura en Ciencia de Materiales</option>
+       </optgroup>
+       <optgroup label="División de Ingenierías">
+           <option value="6">Ingeniería Civil</option>
+           <option value="7">Ingeniería en Alimentos y Biotecnología</option>
+           <option value="8">Ingeniería Topográfica</option>
+           <option value="9">Ingeniería Industrial</option>
+           <option value="10">Ingeniería Mecánica Eléctrica</option>
+           <option value="11">Ingeniería Química</option>
+       </optgroup>
+       <optgroup label="División de Electrónica y Computación">
+           <option value="12">Ingeniería Informática</option>
+           <option value="13">Ingeniería Biomédica</option>
+           <option value="14">Ingeniería en Computación</option>
+           <option value="15">Ingeniería en Comunicaciones y Electrónica</option>
+           <option value="16">Ingeniería Fotónica</option>
+           <option value="17">Ingeniería Robótica</option>
+       </optgroup>
+    </select>    
+    
+    <br><br>
+    
+    <b>Creditos:</b>
+    
+    <input type="text" name="creditos" maxlength="3" onkeypress="return soloNumeros(event)"><br><br>
+
+    <input type="submit" name="btn_enviar" value="Guardar">
+    
+    <input type="reset" name="btn_limpiar" value="Restablecer">
+    
+  </form>
+</body>
+</html>
